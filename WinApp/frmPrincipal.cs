@@ -152,5 +152,12 @@ namespace WinApp
             testFuncoes.MdiParent = this;
             testFuncoes.Show();
         }
+
+        private void FicheirosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFicheiros ficheiros = new frmFicheiros();
+            ficheiros.MdiParent = this;
+            ficheiros.Show();
+        }
     }
 }

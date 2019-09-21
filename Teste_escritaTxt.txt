@@ -1,0 +1,6 @@
+﻿Teste de escrita e leitura par um ficheiro de teste.
+
+Linha 2 
+
+Mais linhas
+Mais linhas para o ficheiro
