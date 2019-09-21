@@ -159,5 +159,12 @@ namespace WinApp
             ficheiros.MdiParent = this;
             ficheiros.Show();
         }
+
+        private void VerDadosDeBaseDeDadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVerDados frmVerDados = new frmVerDados();
+            frmVerDados.MdiParent = this;
+            frmVerDados.Show();
+        }
     }
 }

@@ -54,6 +54,7 @@
             this.horizontalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verticalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ficheirosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verDadosDeBaseDeDadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -66,7 +67,7 @@
             this.janelaToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(859, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -106,7 +107,8 @@
             this.limparFormToolStripMenuItem,
             this.hobbiesToolStripMenuItem,
             this.testFunçõesToolStripMenuItem,
-            this.ficheirosToolStripMenuItem});
+            this.ficheirosToolStripMenuItem,
+            this.verDadosDeBaseDeDadosToolStripMenuItem});
             this.exercíciosToolStripMenuItem.Name = "exercíciosToolStripMenuItem";
             this.exercíciosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.exercíciosToolStripMenuItem.Text = "Exercícios";
@@ -267,11 +269,18 @@
             this.ficheirosToolStripMenuItem.Text = "Ficheiros";
             this.ficheirosToolStripMenuItem.Click += new System.EventHandler(this.FicheirosToolStripMenuItem_Click);
             // 
+            // verDadosDeBaseDeDadosToolStripMenuItem
+            // 
+            this.verDadosDeBaseDeDadosToolStripMenuItem.Name = "verDadosDeBaseDeDadosToolStripMenuItem";
+            this.verDadosDeBaseDeDadosToolStripMenuItem.Size = new System.Drawing.Size(220, 22);
+            this.verDadosDeBaseDeDadosToolStripMenuItem.Text = "Ver dados de Base de Dados";
+            this.verDadosDeBaseDeDadosToolStripMenuItem.Click += new System.EventHandler(this.VerDadosDeBaseDeDadosToolStripMenuItem_Click);
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(859, 542);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -312,5 +321,6 @@
         private System.Windows.Forms.ToolStripMenuItem meusHobbiesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem testFunçõesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ficheirosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verDadosDeBaseDeDadosToolStripMenuItem;
     }
 }
