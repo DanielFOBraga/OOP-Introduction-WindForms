@@ -56,7 +56,7 @@ namespace POO
         }
         public string imprimeDados()
         {
-            return $"{_nome}, {_salario}}";
+            return $"{_nome}, {_salario}";
         }
     }
 }
