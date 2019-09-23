@@ -13,6 +13,18 @@ namespace WinApp
 {
     public partial class frmFicheiros : Form
     {
+        public struct Pessoa
+        {
+            string Nome;
+            string Morada;
+            DateTime DataNascimento;
+            byte Idade()
+            {
+                int dias = (int)DateTime.Now.Subtract(DataNascimento).TotalDays;
+                byte anos = (byte)(dias / 365.25);
+                return anos;
+            }
+        }
         public frmFicheiros()
         {
             InitializeComponent();
