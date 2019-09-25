@@ -11,6 +11,33 @@ namespace POO
     }
     public class Empregado
     {
+        private static int _numEmp;
+        public Empregado()
+        {
+            Nome = string.Empty;
+            dataNascimento = new DateTime(1900,1,1);
+            Departamento = "";
+            Salario = 0;
+            _numEmp++;
+        }
+        public Empregado(string Nome, DateTime dataNascimento)
+        {
+            this.Nome = Nome;
+            this.dataNascimento = dataNascimento;
+            _numEmp++;
+        }
+        public Empregado(string Nome, decimal Salario)
+        {
+            this.Nome = Nome;
+            this.Salario = Salario;
+            _numEmp++;
+        }
+        public Empregado(string Nome, decimal Salario, DateTime dataNascimento, string Departamento)
+        {
+            new Empregado(Nome, Salario);
+            this.dataNascimento = dataNascimento;
+            this.Departamento = Departamento;
+        }
         private string _nome;
 
         public string Nome
@@ -39,7 +66,7 @@ namespace POO
         {
             get { return _salario; }
             set { _salario = value; }
-        }
+        }             
 
         public byte Idade
         {
@@ -52,11 +79,19 @@ namespace POO
         }
         public string imprimeTodosDados()
         {
-            return $"{_nome}, {Idade}, {_departamento}, {_salario}, {_dataNascimento.ToShortDateString()}";
+            return $"{_nome}, {Idade}, {_departamento}, {_salario}, {_dataNascimento.ToShortDateString()}, {_numEmp}";
         }
         public string imprimeDados()
         {
-            return $"{_nome}, {_salario}";
+            return $"{_nome}, {_salario}, {_numEmp}";
+        }
+        public void AumentaSalario(int valor)
+        {
+
+        }
+        public void AumentaSalario(decimal percentagem)
+        {
+
         }
     }
 }

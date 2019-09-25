@@ -58,6 +58,12 @@
     <Compile Include="ExerciciosPOO\frmInserirEmpregadoV1.Designer.cs">
       <DependentUpon>frmInserirEmpregadoV1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ExerciciosPOO\frmInserirEmpregadoV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExerciciosPOO\frmInserirEmpregadoV2.Designer.cs">
+      <DependentUpon>frmInserirEmpregadoV2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmArvore.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -183,6 +189,9 @@
     <EmbeddedResource Include="ExerciciosPOO\frmInserirEmpregadoV1.resx">
       <DependentUpon>frmInserirEmpregadoV1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ExerciciosPOO\frmInserirEmpregadoV2.resx">
+      <DependentUpon>frmInserirEmpregadoV2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmArvore.resx">
       <DependentUpon>frmArvore.cs</DependentUpon>
     </EmbeddedResource>
@@ -277,6 +286,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\POO\POO.csproj">
+      <Project>{a7dc8487-d06f-4197-ba8c-fac988311bfc}</Project>
+      <Name>POO</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Util\Util.csproj">
       <Project>{9beb5308-efe1-4ef7-b143-232bca97daa6}</Project>
       <Name>Util</Name>

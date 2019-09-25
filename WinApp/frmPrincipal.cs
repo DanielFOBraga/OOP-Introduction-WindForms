@@ -166,5 +166,12 @@ namespace WinApp
             frmVerDados.MdiParent = this;
             frmVerDados.Show();
         }
+
+        private void InserirEVerEmpregadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ExerciciosPOO.frmInserirEmpregadoV2 frmEmpregado = new ExerciciosPOO.frmInserirEmpregadoV2();
+            frmEmpregado.MdiParent = this;
+            frmEmpregado.Show();
+        }
     }
 }
