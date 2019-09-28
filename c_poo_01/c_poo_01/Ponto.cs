@@ -22,7 +22,10 @@ namespace c_poo_01
             get { return y; }
             set { y = value; }
         }
+        private bool _igualdade { get; set; }
+
         public Ponto() : this(0, 0) { }
+
         public Ponto(double _x, double _y)
         {
             x = _x;
@@ -40,11 +43,26 @@ namespace c_poo_01
         {
             if (p1.X==p2.X && p1.Y==p2.Y)
             {
-                return true;
+                p1._igualdade = true;
+                return p1._igualdade;
             }
             else
             {
-                return false;
+                p1._igualdade = false;
+                return p1._igualdade;
+            }
+        }
+        public static Ponto operator !=(Ponto p1, Ponto p2)
+        {
+            if (p1.X != p2.X && p1.Y != p2.Y)
+            {
+                p1._igualdade = false;
+                return p1._igualdade;
+            }
+            else
+            {
+                p1._igualdade = true;
+                return p1._igualdade;
             }
         }
     }
