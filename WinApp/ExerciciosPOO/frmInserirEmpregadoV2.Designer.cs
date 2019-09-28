@@ -159,6 +159,7 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Ver";
             this.tabPage2.UseVisualStyleBackColor = true;
+            this.tabPage2.Enter += new System.EventHandler(this.TabPage2_Enter);
             // 
             // listBoxVerEmpregados
             // 

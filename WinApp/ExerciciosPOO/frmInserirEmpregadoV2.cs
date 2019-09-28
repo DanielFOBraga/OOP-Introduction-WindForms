@@ -28,23 +28,43 @@ namespace WinApp.ExerciciosPOO
             Departamento = textBoxDepartamento.Text;
             dataNascimento = dateTimePickerDataNascimento.Value;
             Empregado emp1;
-            if (dataNascimento == DateTime.Now && Departamento==string.Empty)
-            {
-                emp1 = new Empregado(Nome, Salario);
-            }
-            if (textBoxSalario.Text=="" && Departamento == string.Empty)
-            {
-                emp1 = new Empregado(Nome, dataNascimento);
-            }
-            if (textBoxSalario.Text == "" && Departamento == string.Empty && dataNascimento == DateTime.Now)
-            {
-                MessageBox.Show("Deve introduzir pelo menos data de nascimento ou Salário");
-            }
-            else
+            if (Nome != string.Empty && textBoxSalario.Text != string.Empty && Departamento != string.Empty && dataNascimento != DateTime.Now)
             {
                 emp1 = new Empregado(Nome, Salario, dataNascimento, Departamento);
             }
-            
+            else if (textBoxNome.Text == string.Empty && textBoxSalario.Text == string.Empty && Departamento == string.Empty && dataNascimento == DateTime.Now)
+            {
+                MessageBox.Show("Deve introduzir pelo menos data de nascimento ou Salário");
+            }
+            else if (textBoxNome.Text != string.Empty && textBoxSalario.Text != string.Empty)
+            {
+                emp1 = new Empregado(Nome, Salario);
+            }
+            else if (textBoxNome.Text!="" && dataNascimento != DateTime.Now)
+            {
+                emp1 = new Empregado(Nome, dataNascimento);
+            }
+            LimparCampos(this);
+        }
+        void LimparCampos(Control C)
+        {
+            foreach (Control item in C.Controls)
+            {
+                if (item is TextBox)
+                    item.Text = "";
+                if (item is DateTimePicker)
+                    ((DateTimePicker)item).Value = DateTime.Now;
+                if (item.HasChildren == true)
+                    LimparCampos(item);
+            }
+        }
+        private void TabPage2_Enter(object sender, EventArgs e)
+        {
+            listBoxVerEmpregados.Items.Clear();
+            foreach (Empregado empregado in Empregados)
+            {
+                listBoxVerEmpregados.Items.Add(empregado.imprimeDados());
+            }
         }
     }
 }
