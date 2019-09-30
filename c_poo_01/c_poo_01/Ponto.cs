@@ -39,31 +39,22 @@ namespace c_poo_01
             p.y = p1.y + p2.y;
             return p;
         }
-        public static Ponto operator ==(Ponto p1, Ponto p2)
+        public static bool operator ==(Ponto p1, Ponto p2)
         {
-            if (p1.X==p2.X && p1.Y==p2.Y)
-            {
-                p1._igualdade = true;
-                return p1._igualdade;
-            }
+            if (p1.X == p2.X && p1.Y == p2.Y)
+                return true;
+
             else
-            {
-                p1._igualdade = false;
-                return p1._igualdade;
-            }
+                return false;
         }
-        public static Ponto operator !=(Ponto p1, Ponto p2)
+        public static bool operator !=(Ponto p1, Ponto p2)
         {
-            if (p1.X != p2.X && p1.Y != p2.Y)
-            {
-                p1._igualdade = false;
-                return p1._igualdade;
-            }
+            if (p1.X != p2.X || p1.Y != p2.Y)
+
+                return true;
             else
-            {
-                p1._igualdade = true;
-                return p1._igualdade;
-            }
+                return false;
+
         }
     }
 }
