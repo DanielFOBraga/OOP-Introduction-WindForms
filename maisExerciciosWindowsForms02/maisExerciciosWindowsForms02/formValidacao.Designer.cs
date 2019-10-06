@@ -136,7 +136,8 @@
             this.textBoxNome.Location = new System.Drawing.Point(162, 29);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(313, 20);
-            this.textBoxNome.TabIndex = 1;
+            this.textBoxNome.TabIndex = 0;
+            this.textBoxNome.Validating += new System.ComponentModel.CancelEventHandler(this.TextBoxNome_Validating);
             // 
             // textBoxMorada
             // 
@@ -150,7 +151,7 @@
             this.textBoxLocalidade.Location = new System.Drawing.Point(367, 125);
             this.textBoxLocalidade.Name = "textBoxLocalidade";
             this.textBoxLocalidade.Size = new System.Drawing.Size(108, 20);
-            this.textBoxLocalidade.TabIndex = 1;
+            this.textBoxLocalidade.TabIndex = 3;
             // 
             // label8
             // 
@@ -168,21 +169,21 @@
             this.textBoxEmail.Location = new System.Drawing.Point(162, 170);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(313, 20);
-            this.textBoxEmail.TabIndex = 1;
+            this.textBoxEmail.TabIndex = 4;
             // 
             // textBoxTelefone
             // 
             this.textBoxTelefone.Location = new System.Drawing.Point(162, 218);
             this.textBoxTelefone.Name = "textBoxTelefone";
             this.textBoxTelefone.Size = new System.Drawing.Size(120, 20);
-            this.textBoxTelefone.TabIndex = 1;
+            this.textBoxTelefone.TabIndex = 5;
             // 
             // textBoxNIF
             // 
             this.textBoxNIF.Location = new System.Drawing.Point(162, 266);
             this.textBoxNIF.Name = "textBoxNIF";
             this.textBoxNIF.Size = new System.Drawing.Size(120, 20);
-            this.textBoxNIF.TabIndex = 1;
+            this.textBoxNIF.TabIndex = 7;
             // 
             // label9
             // 
@@ -200,7 +201,7 @@
             this.textBoxTelemovel.Location = new System.Drawing.Point(367, 218);
             this.textBoxTelemovel.Name = "textBoxTelemovel";
             this.textBoxTelemovel.Size = new System.Drawing.Size(108, 20);
-            this.textBoxTelemovel.TabIndex = 1;
+            this.textBoxTelemovel.TabIndex = 6;
             // 
             // dateTimeDataNascimento
             // 
@@ -209,7 +210,7 @@
             this.dateTimeDataNascimento.Location = new System.Drawing.Point(162, 309);
             this.dateTimeDataNascimento.Name = "dateTimeDataNascimento";
             this.dateTimeDataNascimento.Size = new System.Drawing.Size(200, 20);
-            this.dateTimeDataNascimento.TabIndex = 2;
+            this.dateTimeDataNascimento.TabIndex = 8;
             this.dateTimeDataNascimento.Value = new System.DateTime(1950, 1, 1, 0, 0, 0, 0);
             // 
             // label10
@@ -229,7 +230,7 @@
             this.buttonValidar.Location = new System.Drawing.Point(523, 317);
             this.buttonValidar.Name = "buttonValidar";
             this.buttonValidar.Size = new System.Drawing.Size(148, 23);
-            this.buttonValidar.TabIndex = 3;
+            this.buttonValidar.TabIndex = 9;
             this.buttonValidar.Text = "Validar";
             this.buttonValidar.UseVisualStyleBackColor = true;
             this.buttonValidar.Click += new System.EventHandler(this.ButtonValidar_Click);
@@ -241,7 +242,7 @@
             this.maskedTextBoxCodigoPostal.Mask = "0000-999";
             this.maskedTextBoxCodigoPostal.Name = "maskedTextBoxCodigoPostal";
             this.maskedTextBoxCodigoPostal.Size = new System.Drawing.Size(100, 20);
-            this.maskedTextBoxCodigoPostal.TabIndex = 4;
+            this.maskedTextBoxCodigoPostal.TabIndex = 2;
             // 
             // textBoxDados
             // 
@@ -250,7 +251,7 @@
             this.textBoxDados.Name = "textBoxDados";
             this.textBoxDados.ReadOnly = true;
             this.textBoxDados.Size = new System.Drawing.Size(333, 251);
-            this.textBoxDados.TabIndex = 5;
+            this.textBoxDados.TabIndex = 11;
             // 
             // erros
             // 

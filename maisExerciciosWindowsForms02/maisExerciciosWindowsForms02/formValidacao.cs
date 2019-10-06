@@ -103,5 +103,20 @@ namespace maisExerciciosWindowsForms02
             //adicionar data de nascimento
             textBoxDados.AppendText("Nasceu a " + dateTimeDataNascimento.Text);
         }
+
+        private void TextBoxNome_Validating(object sender, CancelEventArgs e)
+        {
+            if (FunValid.ValidarNome(textBoxNome.Text)==false)
+            {                
+                erros.SetError(textBoxNome, "Introduzir nome válido");
+                e.Cancel = true;
+                textBoxNome.Select(0, textBoxNome.Text.Length);
+            }
+            else
+            {
+                erros.SetError(textBoxNome, "");
+                e.Cancel = false;
+            }
+        }
     }
 }
