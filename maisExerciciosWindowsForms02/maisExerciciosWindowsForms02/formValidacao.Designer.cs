@@ -133,7 +133,7 @@
             // 
             // textBoxNome
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(162, 29);
+            this.textBoxNome.Location = new System.Drawing.Point(162, 25);
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(313, 20);
             this.textBoxNome.TabIndex = 0;
@@ -141,14 +141,14 @@
             // 
             // textBoxMorada
             // 
-            this.textBoxMorada.Location = new System.Drawing.Point(162, 77);
+            this.textBoxMorada.Location = new System.Drawing.Point(162, 73);
             this.textBoxMorada.Name = "textBoxMorada";
             this.textBoxMorada.Size = new System.Drawing.Size(313, 20);
             this.textBoxMorada.TabIndex = 1;
             // 
             // textBoxLocalidade
             // 
-            this.textBoxLocalidade.Location = new System.Drawing.Point(367, 125);
+            this.textBoxLocalidade.Location = new System.Drawing.Point(367, 121);
             this.textBoxLocalidade.Name = "textBoxLocalidade";
             this.textBoxLocalidade.Size = new System.Drawing.Size(108, 20);
             this.textBoxLocalidade.TabIndex = 3;
@@ -158,7 +158,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(292, 128);
+            this.label8.Location = new System.Drawing.Point(292, 125);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 13);
             this.label8.TabIndex = 0;
@@ -166,14 +166,14 @@
             // 
             // textBoxEmail
             // 
-            this.textBoxEmail.Location = new System.Drawing.Point(162, 170);
+            this.textBoxEmail.Location = new System.Drawing.Point(162, 169);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(313, 20);
             this.textBoxEmail.TabIndex = 4;
             // 
             // textBoxTelefone
             // 
-            this.textBoxTelefone.Location = new System.Drawing.Point(162, 218);
+            this.textBoxTelefone.Location = new System.Drawing.Point(162, 217);
             this.textBoxTelefone.Name = "textBoxTelefone";
             this.textBoxTelefone.Size = new System.Drawing.Size(120, 20);
             this.textBoxTelefone.TabIndex = 5;
@@ -190,7 +190,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label9.Location = new System.Drawing.Point(304, 221);
+            this.label9.Location = new System.Drawing.Point(300, 221);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 13);
             this.label9.TabIndex = 0;
@@ -198,7 +198,7 @@
             // 
             // textBoxTelemovel
             // 
-            this.textBoxTelemovel.Location = new System.Drawing.Point(367, 218);
+            this.textBoxTelemovel.Location = new System.Drawing.Point(367, 217);
             this.textBoxTelemovel.Name = "textBoxTelemovel";
             this.textBoxTelemovel.Size = new System.Drawing.Size(108, 20);
             this.textBoxTelemovel.TabIndex = 6;
@@ -207,7 +207,7 @@
             // 
             this.dateTimeDataNascimento.CustomFormat = "dd - MMMM - yyyy";
             this.dateTimeDataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimeDataNascimento.Location = new System.Drawing.Point(162, 309);
+            this.dateTimeDataNascimento.Location = new System.Drawing.Point(162, 313);
             this.dateTimeDataNascimento.Name = "dateTimeDataNascimento";
             this.dateTimeDataNascimento.Size = new System.Drawing.Size(200, 20);
             this.dateTimeDataNascimento.TabIndex = 8;
@@ -238,7 +238,7 @@
             // maskedTextBoxCodigoPostal
             // 
             this.maskedTextBoxCodigoPostal.Culture = new System.Globalization.CultureInfo("pt-PT");
-            this.maskedTextBoxCodigoPostal.Location = new System.Drawing.Point(162, 122);
+            this.maskedTextBoxCodigoPostal.Location = new System.Drawing.Point(162, 121);
             this.maskedTextBoxCodigoPostal.Mask = "0000-999";
             this.maskedTextBoxCodigoPostal.Name = "maskedTextBoxCodigoPostal";
             this.maskedTextBoxCodigoPostal.Size = new System.Drawing.Size(100, 20);
