@@ -25,8 +25,34 @@ namespace FormacaoBiblioteca
     public class Formador : Pessoa
     {
         public string AreaFormacao { get; set; }
+        public bool Certificacao { get; set; }
         public decimal ValorHora { get; set; }
+        public List<Curso> Cursos { get; set; }
+        public enum TaxasIVA
+        {
+            Reduzida = 6,
+            Intermedia = 13,
+            Normal = 23
+        }
+        public virtual decimal ValorFinal(TaxasIVA IVA)
+        {
+            return ValorHora + (ValorHora * (decimal)IVA / 100);
+        }
     }
+    public class Curso
+    {
+        public string Designacao { get; set; }
+        public int Horas { get; set; }
+        public string Descricao { get; set; }
+    }
+    public class FormadorInformatica : Formador
+    {
+        public bool CertificacaoArea { get; set; }
+        public override decimal ValorFinal(TaxasIVA IVA)
+        {
+            return base.ValorFinal(IVA) + 2;
+        }
 
+    }
 }
 
